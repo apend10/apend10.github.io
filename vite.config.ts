@@ -3,10 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Add base path for GitHub Pages
-  base: mode === 'production' ? '/your-repo-name/' : '/',
+  // For username.github.io repos, base should be '/'
+  base: '/',
   server: {
     host: "::",
     port: 8080,
@@ -22,7 +21,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    // Fix for GitHub Pages MIME type issues
     assetsDir: 'assets',
     rollupOptions: {
       output: {
