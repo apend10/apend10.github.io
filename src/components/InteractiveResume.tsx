@@ -46,7 +46,17 @@ import tamu_background from "@/assets/tamu_wide_background.png";
 import simpleAvatar from "@/assets/simple-avatar.jpg";
 import adsc_logo from "@/assets/adsc_logo.png";
 import tamu_cse_logo from "@/assets/tamu_cse_logo.png";
-import tamu_ce_logo from "@/assets/tamu_constsci_logo.png";
+import tamu_construction_science_logo from "@/assets/tamu_construction_science_logo.png";
+import capitalone_logo from "@/assets/capitalone_logo.png";
+import fidelity_logo from "@/assets/fidelity_logo.jpeg";
+import schwab_logo from "@/assets/schwab_logo.png";
+
+import schwab_office from "@/assets/charlesschwab_office.jpeg";
+import fidelity_office from "@/assets/fidelity_office.jpeg";
+import capitalone_office from "@/assets/capitalone_office.jpg";
+import peterson from "@/assets/peterson.jpeg";
+import research from "@/assets/research.jpeg";
+import zach from "@/assets/zach.jpeg";
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
@@ -318,21 +328,21 @@ const InteractiveResume = () => {
             {getFilteredExperiences().map((exp) => {
               const isExpanded = expandedExperience === exp.id;
               const companyLogos: Record<string, string> = {
-                "Capital One": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSau0cpWWQBUME4-_nijhVTZFOPos0nF5_SrQ&s",
-                "Texas A&M University - Department of Construction Science":  tamu_ce_logo,
-                "Charles Schwab": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMg6GHgKmh3XEpwE_YfZstMo5Il4c7W71haw&s",
-                "Fidelity Investments": "https://logos-world.net/wp-content/uploads/2021/02/Fidelity-Logo.png",
+                "Capital One": capitalone_logo,
+                "Texas A&M University - Department of Construction Science":  tamu_construction_science_logo,
+                "Charles Schwab": schwab_logo,
+                "Fidelity Investments": fidelity_logo,
                 "Aggie Data Science Club": adsc_logo,
                 "Texas A&M University - Department of Computer Science": tamu_cse_logo
               };
 
               const expandedImages: Record<string, string> = {
-                "Capital One": "/src/assets/capitaloneoffice.jpg",
-                "Texas A&M University - Department of Construction Science": "/src/assets/research.jpeg",
-                "Charles Schwab": "/src/assets/charlesschwaboffice.jpeg",
-                "Fidelity Investments": "/src/assets/fidelityoffice.jpeg",
-                "Aggie Data Science Club": "/src/assets/adsc.jpeg",
-                "Texas A&M University- Department of Computer Science": "/src/assets/ta.jpeg"
+                "Capital One": capitalone_office,
+                "Texas A&M University - Department of Construction Science": research,
+                "Charles Schwab": schwab_office,
+                "Fidelity Investments": fidelity_office,
+                "Aggie Data Science Club": peterson,
+                "Texas A&M University - Department of Computer Science": zach
               };
 
               return (
