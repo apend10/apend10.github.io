@@ -126,9 +126,9 @@ const InteractiveResume = () => {
       <div 
         className="bg-gradient-soft dark:bg-gradient-soft bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: theme === 'arsenal' ? arsenal_background : 
-                          theme === 'dark' ? london_background : 
-                          tamu_background
+          backgroundImage: theme === 'arsenal' ? `url(${arsenal_background})` : 
+                          theme === 'dark' ? `url(${london_background})` : 
+                          `url(${tamu_background})`
         }}
       >
         {/* Improved text visibility overlay */}
@@ -447,7 +447,7 @@ const InteractiveResume = () => {
 
         {/* <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent"></div> */}
 
-        {/* Blog Section */}
+        {/* Blog Section
         <Card className="p-8 shadow-card border-2 border-accent/50">
           <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
             <BookOpen className="h-6 w-6" />
@@ -498,7 +498,7 @@ const InteractiveResume = () => {
               </Card>
             ))}
           </div>
-        </Card>
+        </Card>  */}
 
         {/* <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent"></div> */}
 
