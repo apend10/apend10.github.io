@@ -38,6 +38,9 @@ import {
   PartyPopper
 } from "lucide-react";
 import simpleAvatar from "@/assets/simple-avatar.jpg";
+import adsc_logo from "@/assets/adsc.jpeg";
+import tamu_cse_logo from "@/assets/tamu_cse_logo.png";
+import tamu_ce_logo from "@/assets/tamu_constsci_logo.png";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -309,11 +312,11 @@ const InteractiveResume = () => {
               const isExpanded = expandedExperience === exp.id;
               const companyLogos: Record<string, string> = {
                 "Capital One": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSau0cpWWQBUME4-_nijhVTZFOPos0nF5_SrQ&s",
-                "Texas A&M University - Department of Construction Science": "/src/assets/tamu_constsci_logo.png",
+                "Texas A&M University - Department of Construction Science":  tamu_ce_logo,
                 "Charles Schwab": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMg6GHgKmh3XEpwE_YfZstMo5Il4c7W71haw&s",
                 "Fidelity Investments": "https://logos-world.net/wp-content/uploads/2021/02/Fidelity-Logo.png",
-                "Aggie Data Science Club": "/src/assets/adsc_logo.png",
-                "Texas A&M University - Department of Computer Science": "src/assets/tamu_cse_logo.png"
+                "Aggie Data Science Club": adsc_logo,
+                "Texas A&M University - Department of Computer Science": tamu_cse_logo
               };
 
               const expandedImages: Record<string, string> = {
