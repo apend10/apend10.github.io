@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Pastel Theme - Default with tan, white, and black accents */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    /* Warm tan primary */
+    --primary: 39 25% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft neutral secondary */
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Soft accent */
+    --accent: 39 15% 88%;
+    --accent-foreground: 0 0% 20%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 94%;
+    --ring: 39 25% 55%;
+
+    --radius: 0.5rem;
+    
+    /* Pastel palette */
+    --pastel-tan: 39 25% 85%;
+    --pastel-cream: 45 25% 92%;
+    --pastel-gray: 0 0% 85%;
+    
+    /* Pastel gradients */
+    --gradient-soft: linear-gradient(135deg, hsl(39 25% 90%), hsl(0 0% 100%));
+    --gradient-warm: linear-gradient(135deg, hsl(39 25% 85%), hsl(45 25% 92%));
+    
+    /* Skill category colors for pastel theme */
+    --skill-swe: 220 70% 60%;
+    --skill-ml: 140 50% 50%;
+    --skill-data: 30 80% 60%;
+    --skill-all: 0 0% 55%;
+    
+    /* Gentle shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 75%);
+    --shadow-card: 0 2px 8px -2px hsl(0 0% 80%);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 39 25% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 39 25% 55%;
+  }
+
+  .arsenal {
+    /* Arsenal-Themed Mode (Pastel) */
+    --background: 0 50% 95%; /* Pastel red background */
+    --foreground: 250 62% 26%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 250 62% 26%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 250 62% 26%;
+
+    /* Pastel Gold */
+    --primary: 39 40% 75%;
+    --primary-foreground: 250 62% 26%;
+
+    /* Pastel Red */
+    --secondary: 2 60% 75%;
+    --secondary-foreground: 250 62% 26%;
+
+    --muted: 0 20% 96%;
+    --muted-foreground: 250 62% 40%;
+
+    /* Pastel Navy */
+    --accent: 250 40% 70%;
+    --accent-foreground: 250 62% 26%;
+
+    --destructive: 2 60% 75%;
+    --destructive-foreground: 250 62% 26%;
+
+    --border: 39 30% 85%;
+    --input: 0 20% 96%;
+    --ring: 39 40% 75%;
+    
+    /* Arsenal Pastel Color Palette */
+    --arsenal-white: 0 0% 100%;
+    --arsenal-gold: 39 40% 75%;
+    --arsenal-red: 2 60% 75%;
+    --arsenal-navy: 250 40% 70%;
+    
+    /* Skill category colors for arsenal theme */
+    --skill-swe: 220 50% 70%;
+    --skill-ml: 140 40% 70%;
+    --skill-data: 30 60% 70%;
+    --skill-all: 0 0% 70%;
+    
+    /* Arsenal-themed pastel gradients */
+    --gradient-soft: linear-gradient(135deg, hsl(39 40% 85%), hsl(2 60% 85%));
+    --gradient-warm: linear-gradient(135deg, hsl(2 60% 85%), hsl(39 40% 85%));
+    --gradient-arsenal: linear-gradient(135deg, hsl(39 40% 85%), hsl(2 60% 85%), hsl(250 40% 80%));
+    
+    /* No shadows */
+    --shadow-soft: none;
+    --shadow-card: none;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode (Pastel Black, Gray, White with Tan Accents) */
+    --background: 0 0% 8%; /* Pastel black */
+    --foreground: 0 0% 95%; /* White */
+
+    --card: 0 0% 15%; /* Pastel gray */
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Tan accents */
+    --primary: 39 25% 65%;
+    --primary-foreground: 0 0% 8%;
+
+    /* Gray panels */
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    /* Tan accents */
+    --accent: 39 25% 65%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 15%;
+    --ring: 39 25% 65%;
+
+    /* Dark mode color palette */
+    --dark-background: 0 0% 8%;
+    --dark-panels: 0 0% 15%;
+    --dark-accents: 39 25% 65%;
+    --dark-highlights: 0 0% 95%;
+    
+    /* Skill category colors for dark theme */
+    --skill-swe: 220 50% 70%;
+    --skill-ml: 140 40% 70%;
+    --skill-data: 30 60% 70%;
+    --skill-all: 39 25% 65%;
+    
+    /* No gradients - solid colors only */
+    --gradient-soft: hsl(0 0% 8%);
+    --gradient-warm: hsl(0 0% 15%);
+    --gradient-arsenal: hsl(0 0% 8%);
+    
+    /* No shadows */
+    --shadow-soft: none;
+    --shadow-card: none;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
