@@ -37,10 +37,17 @@ import {
   Moon,
   PartyPopper
 } from "lucide-react";
+
+//asset imports
+import arsenal_background from "@/assets/arsenal_wide_background.png";
+import london_background from "@/assets/london_wide_background.jpg";
+import tamu_background from "@/assets/tamu_wide_background.png";
+
 import simpleAvatar from "@/assets/simple-avatar.jpg";
-import adsc_logo from "@/assets/adsc.jpeg";
+import adsc_logo from "@/assets/adsc_logo.png";
 import tamu_cse_logo from "@/assets/tamu_cse_logo.png";
 import tamu_ce_logo from "@/assets/tamu_constsci_logo.png";
+
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -119,9 +126,9 @@ const InteractiveResume = () => {
       <div 
         className="bg-gradient-soft dark:bg-gradient-soft bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: theme === 'arsenal' ? `url('src/assets/arsenal_wide_background.png')` : 
-                          theme === 'dark' ? `url(src/assets/london_wide_background.jpg)` : 
-                          `url('src/assets/tamu_wide_background.png')`
+          backgroundImage: theme === 'arsenal' ? arsenal_background : 
+                          theme === 'dark' ? london_background : 
+                          tamu_background
         }}
       >
         {/* Improved text visibility overlay */}
