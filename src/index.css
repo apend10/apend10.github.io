@@ -71,68 +71,59 @@ All colors MUST be HSL.
     --sidebar-ring: 39 25% 55%;
   }
 
+  /*
+  Palettes
+  pastel black : 0 0% 16.86%;
+  tan: 42.08 33.62% 44.9%;
+  red: 350.85 100% 46.27%;
+  white: 0 0% 99;
+  grey-white: 0 0% 92;
+  navy blue: 219.21 74.81% 26.47%;
+  bruised banana 55.38 67.33% 49.22%;
+
+  testing: 124.26 92.35% 35.88%;
+  */
   .arsenal {
     /* Arsenal-Themed Mode (Pastel) */
-    --background: 0 50% 95%; /* Pastel red background */
-    --foreground: 250 62% 26%;
+    --background: 350.85 100% 46.27%; /* red */
+    --foreground: 0 0% 96%; /* white*/
 
-    --card: 0 0% 100%;
-    --card-foreground: 250 62% 26%;
+    --card: 219.21 74.81% 26.47%; /* navy blue */
+    --card-foreground: 0 0% 96%; /* white */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 250 62% 26%;
+    /* removed popover for simplicity */
 
-    /* Pastel Gold */
-    --primary: 39 40% 75%;
-    --primary-foreground: 250 62% 26%;
+    /* Primary Color */
+    --primary: 42.08 33.62% 44.9%; /* Tan */
+    --primary-foreground: 0 0% 96%; /* white */
 
-    /* Pastel Red */
-    --secondary: 2 60% 75%;
-    --secondary-foreground: 250 62% 26%;
+    /* placeholder */
+    --muted: 350.85 100% 46.27%; /* red */
+    --muted-foreground: 0 0% 96%; /* white */
 
-    --muted: 0 20% 96%;
-    --muted-foreground: 250 62% 40%;
+    /* Borders 
+    --accent: borders for items in experience panel, main color when hovering over a buttin
+    --accent-foreground: secondary color when hovering over a button
+    */
+    --accent: 55.38 67.33% 49.22%; /* bruised banana */
+    --accent-foreground: 0 0% 0%; /* green */
 
-    /* Pastel Navy */
-    --accent: 250 40% 70%;
-    --accent-foreground: 250 62% 26%;
+    --destructive: 0 0% 0%; /* white */
+    --destructive-foreground: 0 0% 0%; /* white */
 
-    --destructive: 2 60% 75%;
-    --destructive-foreground: 250 62% 26%;
-
-    --border: 39 30% 85%;
-    --input: 0 20% 96%;
-    --ring: 39 40% 75%;
+    --border: 55.38 67.33% 49.22%; /* bruised banana */
+    --input: 55.38 67.33% 49.22%; /* bruised banana */
+    --ring: 55.38 67.33% 49.22%; /* bruised banana */
     
-    /* Arsenal Pastel Color Palette */
-    --arsenal-white: 0 0% 100%;
-    --arsenal-gold: 39 40% 75%;
-    --arsenal-red: 2 60% 75%;
-    --arsenal-navy: 250 40% 70%;
-    
-    /* Skill category colors for arsenal theme */
-    --skill-swe: 220 50% 70%;
-    --skill-ml: 140 40% 70%;
-    --skill-data: 30 60% 70%;
-    --skill-all: 0 0% 70%;
-    
-    /* Arsenal-themed pastel gradients */
-    --gradient-soft: linear-gradient(135deg, hsl(39 40% 85%), hsl(2 60% 85%));
-    --gradient-warm: linear-gradient(135deg, hsl(2 60% 85%), hsl(39 40% 85%));
-    --gradient-arsenal: linear-gradient(135deg, hsl(39 40% 85%), hsl(2 60% 85%), hsl(250 40% 80%));
+    /* Skill category colors */
+    --skill-swe: 220 70% 60%;
+    --skill-ml: 140 50% 50%;
+    --skill-data: 30 80% 60%;
+    --skill-all: 0 0% 55%;
     
     /* No shadows */
     --shadow-soft: none;
     --shadow-card: none;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {

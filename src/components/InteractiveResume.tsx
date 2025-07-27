@@ -15,9 +15,7 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Code, 
-  Database, 
-  Globe, 
+  Code,  
   Terminal,
   Download,
   ExternalLink,
@@ -28,20 +26,20 @@ import {
   Briefcase,
   GraduationCap,
   BookOpen,
-  X,
   Clock,
   Building,
   ChevronDown,
   ChevronUp,
   Sun,
   Moon,
-  PartyPopper
+  Volleyball
 } from "lucide-react";
 
 //asset imports
 import arsenal_background from "@/assets/arsenal_wide_background.png";
 import london_background from "@/assets/london_wide_background.jpg";
 import tamu_background from "@/assets/tamu_wide_background.png";
+import arsenal_bruised_banana from "@/assets/arsenal_bruised_banana.webp";
 
 import simpleAvatar from "@/assets/simple-avatar.jpg";
 import adsc_logo from "@/assets/adsc_logo.png";
@@ -194,7 +192,7 @@ const InteractiveResume = () => {
                     onClick={() => setTheme("arsenal")}
                     className="p-2"
                   >
-                    <PartyPopper className="h-4 w-4" />
+                    <Volleyball className="h-4 w-4" />
                   </Button>
                   <Button
                     variant={theme === "dark" ? "default" : "ghost"}
@@ -231,12 +229,23 @@ const InteractiveResume = () => {
         </Card>
 
         {/* Quote */}
-        <Card className={`p-8 text-center border-2 border-accent/50 ${theme === 'dark' ? 'bg-card' : theme === 'arsenal' ? 'bg-gradient-soft' : 'bg-gradient-warm'} ${theme === 'dark' ? '' : 'shadow-card'}`}>
-          <blockquote className="text-lg italic text-foreground/90">
-            "Remember who you are, what you are, and who you represent"
-          </blockquote>
-          <cite className="text-muted-foreground font-medium mt-2 block">- David Rocastle</cite>
-        </Card>
+        {theme === 'arsenal' ? (
+          <Card className="p-0 border-2 border-accent/50 bg-gradient-soft shadow-card flex items-center justify-center overflow-hidden">
+            <img
+              src={arsenal_bruised_banana}
+              alt="Arsenal"
+              className="w-full h-auto object-cover"
+              style={{ maxHeight: 220, display: 'block' }}
+            />
+          </Card>
+        ) : (
+          <Card className={`p-8 text-center border-2 border-accent/50 ${theme === 'dark' ? 'bg-card' : 'bg-gradient-warm'} ${theme === 'dark' ? '' : 'shadow-card'}`}>
+            <blockquote className="text-lg italic text-foreground/90">
+              "Remember who you are, what you are, and who you represent"
+            </blockquote>
+            <cite className="text-muted-foreground font-medium mt-2 block">- David Rocastle</cite>
+          </Card>
+        )}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Skills */}
