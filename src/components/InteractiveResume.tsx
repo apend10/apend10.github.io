@@ -36,6 +36,7 @@ import {
 } from "lucide-react";
 
 //asset imports
+import abhiram_resume from "@/assets/abhiram_resume.pdf";
 import arsenal_background from "@/assets/arsenal_wide_background.png";
 import london_background from "@/assets/london_wide_background.jpg";
 import tamu_background from "@/assets/tamu_wide_background.png";
@@ -220,7 +221,11 @@ const InteractiveResume = () => {
                 <Linkedin className="h-4 w-4 mr-2" />
                 LinkedIn
               </Button>
-              <Button size="sm">
+              <Button 
+               variant="outline" 
+               size="sm"
+               onClick={() => window.open("src/assets/abhiram_pendela_resume.pdf", "_blank")}
+               >
                 <Download className="h-4 w-4 mr-2" />
                 Download Resume
               </Button>
