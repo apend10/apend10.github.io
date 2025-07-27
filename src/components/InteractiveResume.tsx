@@ -36,7 +36,7 @@ import {
 } from "lucide-react";
 
 //asset imports
-import abhiram_resume from "@/assets/abhiram_resume.pdf";
+import abhiram_resume from "@/assets/abhiram_pendela_resume.pdf";
 import arsenal_background from "@/assets/arsenal_wide_background.png";
 import london_background from "@/assets/london_wide_background.jpg";
 import tamu_background from "@/assets/tamu_wide_background.png";
