@@ -224,7 +224,7 @@ const InteractiveResume = () => {
               <Button 
                variant="outline" 
                size="sm"
-               onClick={() => window.open("src/assets/abhiram_pendela_resume.pdf", "_blank")}
+               onClick={() => window.open(abhiram_resume, "_blank")}
                >
                 <Download className="h-4 w-4 mr-2" />
                 Download Resume
