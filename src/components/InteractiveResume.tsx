@@ -767,7 +767,7 @@ const InteractiveResume = () => {
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Building className="h-4 w-4" />
-                    <span className="font-medium text-primary">{selectedEducation.school}</span>
+                    <span className="font-medium">{selectedEducation.school}</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
