@@ -9,6 +9,10 @@ import { blogPosts } from '@/data/blogs';
 import { BlogPost } from '@/data/blogs';
 import { education } from '@/data/education';
 import { Education } from '@/data/education';
+import { projects } from '@/data/projects';
+import { Project } from '@/data/projects';
+import { hackathons } from '@/data/hackathons';
+import { Hackathon } from '@/data/hackathons';
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { 
@@ -70,6 +74,7 @@ const InteractiveResume = () => {
   const [selectedExperienceCategory, setSelectedExperienceCategory] = useState<'All' | 'Professional' | 'Academia'>('All');
   const [expandedExperience, setExpandedExperience] = useState<string | null>(null);
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
+  const [expandedHackathon, setExpandedHackathon] = useState<string | null>(null);
 
   // Handle hydration issue with next-themes
   useEffect(() => {
@@ -533,29 +538,7 @@ const InteractiveResume = () => {
             Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              { 
-                id: "1",
-                name: "Depolarize", 
-                tech: "Hugging Face, Python, Flask",
-                description: "AI-powered application to reduce political polarization through neutral content generation.",
-                details: "Built using Hugging Face transformers for natural language processing, creating a web application that analyzes political content and suggests more neutral alternatives."
-              },
-              { 
-                id: "2",
-                name: "Stathub - A Premier League Prediction Model", 
-                tech: "Python, Scikit-learn",
-                description: "Machine learning model predicting Premier League match outcomes.",
-                details: "Developed predictive models using historical match data, player statistics, and team performance metrics to forecast match results with 75% accuracy."
-              },
-              { 
-                id: "3",
-                name: "Panda Express POS System", 
-                tech: "React, Python, Flask",
-                description: "Full-stack point-of-sale system for restaurant management.",
-                details: "Complete POS solution with inventory management, order processing, and sales analytics. Features real-time updates and responsive design."
-              },
-            ].map((project) => {
+            {projects.map((project) => {
               const isExpanded = expandedProject === project.id;
               return (
                  <Card 
@@ -591,7 +574,7 @@ const InteractiveResume = () => {
                       className="w-full"
                       onClick={(e) => {
                         e.stopPropagation();
-                        window.open("https://www.arsenal.com/", "_blank");
+                        window.open(project.link, "_blank");
                       }}
                     >
                       <ExternalLink className="h-4 w-4 mr-2" />
@@ -613,61 +596,32 @@ const InteractiveResume = () => {
             Hackathons
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              { 
-                id: "4",
-                name: "TAMUHack 2025 - Guardian CV", 
-                tech: "Computer Vision, Python",
-                description: "Computer vision application for safety monitoring.",
-                details: "Developed during hackathon to create real-time safety monitoring system using computer vision algorithms for workplace hazard detection."
-              },
-              { 
-                id: "5",
-                name: "HackTX 2024", 
-                tech: "Python, Flask",
-                description: "Hackathon project focusing on data analysis.",
-                details: "Built data visualization and analysis platform during 48-hour hackathon, focusing on real-time data processing and interactive dashboards."
-              },
-              { 
-                id: "6",
-                name: "TAMUHack 2024", 
-                tech: "Next.js, Tailwind CSS",
-                description: "Web application developed during university hackathon.",
-                details: "Created responsive web application with modern UI/UX design, featuring dynamic content management and user authentication."
-              },
-              { 
-                id: "7",
-                name: "TAMUHack 2023", 
-                tech: "React, OpenWeather API",
-                description: "Weather tracking application with real-time data.",
-                details: "Interactive weather dashboard integrating OpenWeather API with location-based forecasting and historical weather pattern analysis."
-              },
-            ].map((project) => {
-              const isExpanded = expandedProject === project.id;
+            {hackathons.map((hackathon) => {
+              const isExpanded = expandedHackathon === hackathon.id;
               return (
                  <Card 
-                   key={project.id} 
+                   key={hackathon.id} 
                    className="shadow-soft border-2 border-accent/50 hover:border-accent hover:shadow-card transition-shadow"
                  >
                   <div 
                     className="p-4 cursor-pointer"
-                    onClick={() => setExpandedProject(isExpanded ? null : project.id)}
+                    onClick={() => setExpandedHackathon(isExpanded ? null : hackathon.id)}
                   >
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="font-semibold text-foreground">{project.name}</h3>
+                      <h3 className="font-semibold text-foreground">{hackathon.name}</h3>
                       {isExpanded ? (
                         <ChevronUp className="h-4 w-4 text-muted-foreground" />
                       ) : (
                         <ChevronDown className="h-4 w-4 text-muted-foreground" />
                       )}
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">{project.tech}</p>
-                    <p className="text-xs text-muted-foreground">{project.description}</p>
+                    <p className="text-sm text-muted-foreground mb-3">{hackathon.tech}</p>
+                    <p className="text-xs text-muted-foreground">{hackathon.description}</p>
                   </div>
                   
                   {isExpanded && (
                     <div className="px-4 pb-4 border-t border-border/50 pt-3">
-                      <p className="text-sm text-muted-foreground mb-3">{project.details}</p>
+                      <p className="text-sm text-muted-foreground mb-3">{hackathon.details}</p>
                     </div>
                   )}
                   
@@ -678,7 +632,7 @@ const InteractiveResume = () => {
                       className="w-full"
                       onClick={(e) => {
                         e.stopPropagation();
-                        window.open("https://www.arsenal.com/", "_blank");
+                        window.open(hackathon.link, "_blank");
                       }}
                     >
                       <ExternalLink className="h-4 w-4 mr-2" />

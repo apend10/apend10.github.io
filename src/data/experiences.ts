@@ -35,9 +35,9 @@ export const experiences: Experience[] = [
       company: "Aggie Data Science Club",
       period: "August 2022 - May 2026",
       location: "College Station, Texas",
-      description: "Leading external partnerships and industry engagement initiatives",
-      fullDescription: "As External Vice President of the Aggie Data Science Club, I spearhead strategic partnerships with industry professionals and coordinate comprehensive external engagement initiatives. My role involves organizing cutting-edge workshops, securing high-profile guest speakers, and facilitating networking opportunities that directly connect our 200+ club members with data science professionals and career advancement opportunities. I work closely with tech companies, startups, and established corporations to create meaningful learning experiences and internship pathways for students pursuing careers in data science, machine learning, and analytics.",
-      technologies: ["Python", "R", "Tableau", "Power BI", "SQL", "Git", "Jupyter", "Pandas", "Scikit-learn"],
+      description: "Advancing data science at Texas A&M through strategic parterships, workshops, networking, and mentorship",
+      fullDescription: "During my first week as a freshman, I went to a pandas workshop led by ADSC because I thought data science was cool and I wanted to learn what pandas was. Since then, I went from a member, to a workshops officer, to the External VP. I learned a lot from all of the three hats I wore and this experience helped me grow in many ways! In my current role as the External VP my main goal is to establish partnerships with companies and organizations in the industry to provide our members with exclusive opportunities, such as internships, workshops, projects, career readiness, and more.",
+      technologies: ["Python", "SQL", "Scikit-learn", "Pandas", "Numpy", "Seaborn", "Machine Learning", "Leadership", "Teamwork", "Marketing"],
       achievements: [
         "Established partnerships with 8+ major tech companies including Google, Microsoft, and Meta for exclusive student opportunities",
         "Organized 15+ industry workshops and guest speaker events with 500+ total attendees across academic year",
@@ -52,7 +52,7 @@ export const experiences: Experience[] = [
       company: "Texas A&M University - Department of Construction Science",
       period: "Jan 2024 - May 2025",
       location: "College Station, Texas",
-      description: "Revolutionized construction project planning.",
+      description: "Utilized machine learning to improve construction cost estimates for infrastructure projects",
       fullDescription: "Our goal was to help the Texas Department of Transportation identify delays and possible roadblocks in various construction tasks ahead of time through the use of Natural Language Processsing and Predictive Modelling. We created an autoencoder model to detect inaccuracies after an initial K-Nearest Neighbors model which was improved upon. Lastly, we abstracted the model into an intuitive user interface to serve as an aide for engineers.",
       technologies: ["Python", "SMOTE", "Pytorch", "Scikit-learn", "Pandas", "Numpy", "Seaborn"],
       achievements: [
@@ -69,7 +69,7 @@ export const experiences: Experience[] = [
       period: "Jun 2024 - Aug 2024",
       location: "Southlake, Texas",
       description: "Worked in the Cloud Data Warehouse (CDW) team within Schwab Technology Services (STS)",
-      fullDescription: "",
+      fullDescription: "During my second internship, I worked in a team responsible for core data infrastructure used by many other teams in the company. Although I wasn't given an opportunity to work on production code, I created a data pipeline used by management to monitor 34 real-time KPIs in the company relating to employee performance data. I also shadowed a Machine Learning Operations team where I learned about producitionalizing models and data governance and was introduced to further tools such as Dataiku.",
       technologies: ["Python", "SQL", "Google Cloud Platform", "BigQuery", "Informatica", "Tableau"],
       achievements: [
         "Automated internal dashboards monitored by leadership to monitor 34 real-time KPIs in Schwab Technology Services (STS)",
@@ -80,23 +80,6 @@ export const experiences: Experience[] = [
     },
     {
       id: "5",
-      role: "Data Engineer Intern", 
-      company: "Fidelity Investments",
-      period: "Jun 2023 - Aug 2023",
-      location: "Westlake, Texas",
-      description: "Worked in the Cyber Data and Analytics (CDA) Team within Enterprise Technology ",
-      fullDescription: "",
-      technologies: ["Python", "Boto3", "Apache NiFi", "DBT", "AWS S3", "Jenkins", "AWS CloudFormation", "AWS RDS"],
-      achievements: [
-        "Modernized ingestion pipelines for the Cyber Data and Analytics team by implementing a cloud-native data pipeline",
-        "Utilized AWS, Boto3, and Jenkins to provision S3 buckets and enforce security policies via CloudFormation templates",
-        "Integrated Apache NiFi to automate source-to-S3 data transfer, reducing manual overhead and increasing throughput",
-        "Built DBT models and Python scripts to transform staged data in RDS to be compatible for 7 downstream teams"
-      ],
-      category: "Professional"
-    },
-    {
-      id: "6",
       role: "Teaching Assistant",
       company: "Texas A&M University - Department of Computer Science",
       period: "January 2024 - May 2024",
@@ -110,5 +93,22 @@ export const experiences: Experience[] = [
         "Conducted office hours to provide additional support and clarification on course material",
       ],
       category: "Academia"
-    }
+    },
+    {
+      id: "6",
+      role: "Data Engineer Intern", 
+      company: "Fidelity Investments",
+      period: "Jun 2023 - Aug 2023",
+      location: "Westlake, Texas",
+      description: "Worked in the Cyber Data and Analytics (CDA) Team within Enterprise Technology ",
+      fullDescription: "My first ever experience in the corporate world was this internship at Fidelity. Filled with enthusiasm and excitement, I wanted to learn more about cloud computing and how technology even worked at a large company. I worked in a cross functional team with data scientists, analysts, software engineers, and data engineers responsible for ingesting, analyzing, visualizing, and acting on Cyber Security related data. I used many tools during this and I specially learned how to produce results using new tools in a short amount of time. Additionally, I enjoyed the team dynamic, realized my passion for problem solving, and excelled in collaborating with a group of around 10 engineers.",
+      technologies: ["Python", "Boto3", "Apache NiFi", "DBT", "AWS S3", "Jenkins", "AWS CloudFormation", "AWS RDS"],
+      achievements: [
+        "Modernized ingestion pipelines for the Cyber Data and Analytics team by implementing a cloud-native data pipeline",
+        "Utilized AWS, Boto3, and Jenkins to provision S3 buckets and enforce security policies via CloudFormation templates",
+        "Integrated Apache NiFi to automate source-to-S3 data transfer, reducing manual overhead and increasing throughput",
+        "Built DBT models and Python scripts to transform staged data in RDS to be compatible for 7 downstream teams"
+      ],
+      category: "Professional"
+    },
   ];
