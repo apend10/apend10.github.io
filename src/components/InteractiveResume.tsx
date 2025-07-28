@@ -557,12 +557,21 @@ const InteractiveResume = () => {
                         <ChevronDown className="h-4 w-4 text-muted-foreground" />
                       )}
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">{project.tech}</p>
+
                     <p className="text-xs text-muted-foreground">{project.description}</p>
+
                   </div>
                   
                   {isExpanded && (
                     <div className="px-4 pb-4 border-t border-border/50 pt-3">
+                      <div className="flex flex-wrap gap-2 mb-3">
+                      {project.tech.map(tech => (
+                        <Badge key={tech} variant="outline" className="bg-arsenal-blue/20 border-arsenal-blue/30">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                    
                       <p className="text-sm text-muted-foreground mb-3">{project.details}</p>
                     </div>
                   )}
@@ -615,14 +624,25 @@ const InteractiveResume = () => {
                         <ChevronDown className="h-4 w-4 text-muted-foreground" />
                       )}
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">{hackathon.tech}</p>
+                    
                     <p className="text-xs text-muted-foreground">{hackathon.description}</p>
+
                   </div>
                   
                   {isExpanded && (
                     <div className="px-4 pb-4 border-t border-border/50 pt-3">
-                      <p className="text-sm text-muted-foreground mb-3">{hackathon.details}</p>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                      {hackathon.tech.map(tech => (
+                        <Badge key={tech} variant="outline" className="bg-arsenal-blue/20 border-arsenal-blue/30">
+                          {tech}
+                        </Badge>
+                      ))}
                     </div>
+
+                    <p className="text-sm text-muted-foreground mb-3 mt-3">{hackathon.details}</p>
+                    </div>
+
+                    
                   )}
                   
                   <div className="p-4 pt-0">
