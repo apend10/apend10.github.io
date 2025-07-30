@@ -17,7 +17,9 @@ if (typeof window !== 'undefined') {
 }
 
 createRoot(document.getElementById("root")!).render(
+  <div className="w-full min-h-screen overflow-x-hidden">
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
+  </div>,
 );

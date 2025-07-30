@@ -181,8 +181,8 @@ const InteractiveResume = () => {
                 <span>248-764-0989</span>
               </div>
             </div>
-            <div className="flex gap-3 items-center">
-              {mounted && (
+            <div className="flex items-center gap-2 text-muted-foreground">
+                            {mounted && (
                 <div className="flex gap-1 p-1 bg-muted rounded-lg">
                   <Button
                     variant={theme === "light" ? "default" : "ghost"}
@@ -210,6 +210,8 @@ const InteractiveResume = () => {
                   </Button>
                 </div>
               )}
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2">
               <Button 
                 variant="outline" 
                 size="sm"
@@ -232,7 +234,7 @@ const InteractiveResume = () => {
                onClick={() => window.open(abhiram_resume, "_blank")}
                >
                 <BookOpenText className="h-4 w-4 mr-2" />
-                View Resume
+                Resume
               </Button>
             </div>
           </div>
@@ -373,7 +375,7 @@ const InteractiveResume = () => {
                     className="p-6 cursor-pointer"
                     onClick={() => setExpandedExperience(isExpanded ? null : exp.id)}
                   >
-                    <div className="flex gap-6">
+                    <div className= "flex flex-col md:flex-row gap-4 md:gap-6">
                        <div className="flex-shrink-0">
                          <div className="w-20 h-20 bg-card border-2 border-muted rounded-lg flex items-center justify-center p-2">
                            {companyLogos[exp.company] ? (
@@ -416,11 +418,10 @@ const InteractiveResume = () => {
                   
                   {isExpanded && (
                     <div className="border-t border-border/50 pt-4">
-                      <div className="flex gap-6 px-6 pb-6">
+                      <div className="flex flex-col md:flex-row gap-4 md:gap-6 px-2 md:px-6 pb-6">
                          {/* Left side - Image */}
-                         <div className="flex-shrink-0 w-48">
-                           <div className="w-full h-32 bg-card border-2 border-muted rounded-lg flex items-center justify-center p-4">
-                             {expandedImages[exp.company] ? (
+                         <div className="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
+                            <div className="w-full h-40 md:h-32 bg-card rounded-lg flex items-center justify-center">                             {expandedImages[exp.company] ? (
                                <img 
                                  src={expandedImages[exp.company]} 
                                  alt={`${exp.company} office`}
@@ -432,8 +433,8 @@ const InteractiveResume = () => {
                            </div>
                          </div>
                         
-                        {/* Vertical divider */}
-                        <div className="w-px bg-border"></div>
+                        {/* Vertical divider for desktop only */}
+                        <div className="hidden md:block w-px bg-border"></div>
                         
                         {/* Right side - Content */}
                         <div className="flex-1 space-y-4">
