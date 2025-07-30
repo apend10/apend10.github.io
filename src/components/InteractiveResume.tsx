@@ -21,7 +21,7 @@ import {
   MapPin, 
   Code,  
   Terminal,
-  Download,
+  BookOpenText,
   ExternalLink,
   Github,
   Linkedin,
@@ -231,8 +231,8 @@ const InteractiveResume = () => {
                size="sm"
                onClick={() => window.open(abhiram_resume, "_blank")}
                >
-                <Download className="h-4 w-4 mr-2" />
-                Download Resume
+                <BookOpenText className="h-4 w-4 mr-2" />
+                View Resume
               </Button>
             </div>
           </div>

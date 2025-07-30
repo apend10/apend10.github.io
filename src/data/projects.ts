@@ -11,7 +11,7 @@ export const projects: Project[] = [
     { 
     id: "1",
     name: "Depolarize", 
-    tech: ["Hugging Face", "Python", "Flask"],
+    tech: ["Hugging Face", "Python", "Flask", "Natural Language Processing (NLP)", "LLM Finetuning"],
     description: "AI-powered application to reduce political polarization through neutral content generation.",
     details: "Built using Hugging Face transformers for natural language processing, creating a web application that analyzes political content and suggests more neutral alternatives.",
     link: "https://github.com/depolarize/depolarize"
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     { 
     id: "2",
     name: "Stathub - A Premier League Prediction Model", 
-    tech: ["Python", "Scikit-learn"],
+    tech: ["Python", "Scikit-learn", "Seaborn", "Pandas"],
     description: "Machine learning model predicting Premier League match outcomes.",
     details: "Developed predictive models using historical match data, player statistics, and team performance metrics to forecast match results with 75% accuracy.",
     link: "https://github.com/apend10/epl_prediction/tree/master"
