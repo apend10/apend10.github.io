@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
       period: "August 2022 - May 2026",
       location: "College Station, Texas",
       description: "Advancing data science at Texas A&M through strategic parterships, workshops, networking, and mentorship",
-      fullDescription: "During my first week as a freshman, I went to a pandas workshop led by ADSC because I thought data science was cool and I wanted to learn what pandas was. Since then, I went from a member, to a workshops officer, to the External VP. I learned a lot from all of the three hats I wore and this experience helped me grow in many ways! In my current role as the External VP my main goal is to establish partnerships with companies and organizations in the industry to provide our members with exclusive opportunities, such as internships, workshops, projects, career readiness, and more.",
+      fullDescription: "During my first week as a freshman, I went to a pandas workshop led by ADSC because I thought data science was cool and I wanted to learn what pandas was. Since then, I went from a member, to a workshops officer, to the External VP. I learned a lot from all of the three hats I wore. In my current role as the External VP my main goal is to establish partnerships with companies and organizations in the industry to provide our members with exclusive opportunities, such as internships, workshops, projects, career readiness, and more.",
       technologies: ["Python", "SQL", "Scikit-learn", "Pandas", "Numpy", "Seaborn", "Machine Learning", "Leadership", "Teamwork", "Marketing"],
       achievements: [
         "Established partnerships with 8+ major tech companies including Google, Microsoft, and Meta for exclusive student opportunities",
