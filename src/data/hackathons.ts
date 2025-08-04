@@ -20,7 +20,7 @@ export const hackathons: Hackathon[] = [
     id: "2",
     name: "HackTX 2024", 
     tech: ["Python", "Flask", "Langchain", "TypeScript", "SQL", "nltk", "Topic Modelling", "ChatGPT API", "Retrieval Augmented Generation(RAG)"],
-    description: "An modular AI app that creates custom chatbots by learning from your documents to provide accurate responses.",
+    description: "A modular AI app that creates custom chatbots by learning from your documents to provide accurate responses.",
     details: "Training Wheels lets users create custom chatbots by uploading their own documents, which are processed using Retrieval-Augmented Generation (RAG) to deliver accurate, context-aware answers. The chatbot can then be easily embedded into any website using an iframe, just like how a YouTube video is shown on another website. For example, a small business can upload product manuals to provide instant customer support, or a teacher can create an automatic teaching assistant that answers students’ questions based on course materials.",
     link: "https://devpost.com/software/training-wheels-ohk8ri"
     },
