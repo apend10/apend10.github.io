@@ -46,7 +46,7 @@ import london_background from "@/assets/london_wide_background.jpg";
 import tamu_background from "@/assets/tamu_wide_background.png";
 import arsenal_bruised_banana from "@/assets/arsenal_bruised_banana.webp";
 
-import simpleAvatar from "@/assets/simple-avatar.jpg";
+import simpleAvatar from "@/assets/simple-avatar.png";
 import adsc_logo from "@/assets/adsc_logo.png";
 import tamu_cse_logo from "@/assets/tamu_cse_logo.png";
 import tamu_construction_science_logo from "@/assets/tamu_construction_science_logo.png";
@@ -152,7 +152,7 @@ const InteractiveResume = () => {
               <img
                 src={simpleAvatar}
                 alt="Abhiram Pendela"
-                className="w-32 h-32 rounded-full mx-auto shadow-soft border-4 border-white"
+                className="w-40 h-40 rounded-full mx-auto shadow-soft border-4 border-white object-cover block"
               />
               <div className="backdrop-blur-sm bg-black/20 rounded-xl p-6 mx-auto max-w-md">
                 <h1 className="text-4xl font-bold text-white drop-shadow-lg">Abhiram Pendela</h1>
